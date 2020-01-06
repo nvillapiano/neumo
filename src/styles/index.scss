@@ -1,0 +1,29 @@
+// index.scss
+
+$white: #fff;
+$black: #000;
+$grey: #eee;
+
+// shadow
+$shadow-color-top: #ffffff;
+$shadow-color-bottom: #beb4b4;
+$shadow-border-radius: 10%;
+$shadow-size: 1.6rem;
+$shadow-offset: $shadow-size * .375;
+
+%shadowBasic {
+  border: 0.1rem solid rgba($color: $white, $alpha: 0.2);
+  border-radius: $shadow-border-radius;
+  box-shadow:
+    $shadow-offset $shadow-offset $shadow-size 0 $shadow-color-bottom,
+    $shadow-offset * -1 $shadow-offset * -1 $shadow-size 0 $shadow-color-top;
+}
+
+:global(body, html) {
+  font-size: 62.5%;
+}
+
+
+:global(body) {
+	background: $grey;
+}

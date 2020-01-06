@@ -9,12 +9,22 @@
 	import Header from './components/Header.svelte';
 </script>
 
-<style>
+<style type="text/scss">
+	@import "./styles/index.scss";
 	main {
 		text-align: center;
 		padding: 1em;
 		max-width: 240px;
 		margin: 0 auto;
+
+		p {
+			height: 300px;
+			width: 300px;
+			padding: 20px;
+			margin: 40px auto;
+			@extend %shadowBasic;
+		}
+
 	}
 
 	@media (min-width: 640px) {

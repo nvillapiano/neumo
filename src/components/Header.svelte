@@ -8,9 +8,11 @@
 	export let name;
 </script>
 
-<style>
+<style type="text/scss">
+  $color: yellow;
+
 	h1 {
-		color: #ff3e00;
+		color: $color;
 		/* text-transform: uppercase; */
 		font-size: 4em;
 		font-weight: 100;
